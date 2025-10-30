@@ -1,0 +1,17 @@
+^\s*//.*;;;--> Comentário de Linha Única: O Java ignora o resto desta linha.
+^\s*\{;;;--> Abre Bloco: Inicia um bloco de código (de classe, método, if, etc.).
+^\s*\};;;--> Fecha Bloco: Finaliza um bloco de código.
+^\s*public\s+class\s+\w+\s*\{?;;;--> Declaração de Classe: Define a estrutura principal do seu programa.
+^\s*public\s+static\s+void\s+main\s*\(\QString[]\E\s+\w+\)\s*\{?;;;--> Método Principal (main): Ponto de entrada. Onde o programa começa a rodar.
+System\.out\.println\s*\(.*\);;;--> Comando de Saída: Imprime um texto no console e pula uma linha.
+System\.out\.print\s*\(.*\);;;--> Comando de Saída: Imprime um texto no console (sem pular linha).
+^\s*if\s*\(.*\)\s*\{?;;;--> Estrutura Condicional (Se): Verifica se uma condição é verdadeira.
+^\s*else\s*\{?;;;--> Estrutura Condicional (Senão): Executa se o 'if' anterior for falso.
+^\s*for\s*\(.*\)\s*\{?;;;--> Laço de Repetição (For): Usado para repetir um bloco de código.
+^\s*while\s*\(.*\)\s*\{?;;;--> Laço de Repetição (While): Repete um bloco *enquanto* uma condição for verdadeira.
+^\s*int\s+\w+\s*=\s*.*;;;--> Declaração e Inicialização (Inteiro): Cria uma variável para números inteiros e guarda um valor nela.
+^\s*String\s+\w+\s*=\s*.*;;;--> Declaração e Inicialização (Texto): Cria uma variável para texto e guarda um valor nela.
+^\s*double\s+\w+\s*=\s*.*;;;--> Declaração e Inicialização (Decimal): Cria uma variável para números decimais e guarda um valor nela.
+^\s*int\s+\w+\s*;;;;--> Declaração de Variável (Inteiro): Reserva espaço na memória para um número inteiro.
+^\s*String\s+\w+\s*;;;;--> Declaração de Variável (Texto): Reserva espaço na memória para um texto.
+.*;\s*$;;;--> Fim da Instrução: O ';' indica ao Java o fim de um comando.
